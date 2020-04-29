@@ -1,0 +1,126 @@
+{% extends 'core/base.html' %} 
+{% load static %}
+{% block title %}Info{%endblock%} 
+{% block Hero %}
+
+<section id="hero" class="d-flex justify-cntent-center align-items-center">
+  <div
+    id="heroCarousel"
+    class="container carousel carousel-fade"
+    data-ride="carousel"
+  >
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-container">
+        <h2 class="animated fadeInDown">
+          What <span>does Text Anlytics do?</span>
+        </h2>
+        <p class="animated fadeInUp">
+          Text analytics is the automated process of translating large volumes
+          of unstructured text into quantitative data to uncover insights,
+          trends, and patterns. Combined with data visualization tools, this
+          technique enables companies to understand the story behind the numbers
+          and make better decisions.
+        </p>
+        <!-- <a href="{% url 'info' %}" class="btn-get-started animated fadeInUp">Read More</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+{% endblock %} 
+{% block features %}
+<section class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Features</h2>
+        <p>
+            When searching for a definition of text analytics, you may have come across related concepts, like text mining and text analysis. So, before going into the details, we’ll outline the main differences between these terms.
+        </p>
+      </div>
+  
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5">
+          <img
+            src="{% static 'core/assets/img/TextAnalysis.png'%}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 pt-4">
+            <h3>Text mining, text analysis, and text analytics</h3>
+          <p>
+            Text mining, text analysis, and text analytics are often used interchangeably, with the end goal of analyzing unstructured text to obtain insights. However, while text mining (or text analysis) provides insights of a qualitative nature, text analytics aggregates these results and turns them into something that can be quantified and visualized through charts and reports.
+        </p>
+        <p>Text analysis and text analytics often work together to provide a complete understanding of all kinds of text, like emails, social media posts, surveys, customer support tickets, and more. For example, you can use text analysis tools to find out how people feel toward a brand on social media (sentiment analysis), or understand the main topics in product reviews (topic detection). Text analytics, on the other hand, leverages the results of text analysis to identify patterns, such as a spike in negative feedback, and provides you with actionable insights you can use to make improvements, like fixing a bug that’s frustrating your users.</p>
+        </div>
+      </div>
+  
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5 order-1 order-md-2">
+          <img
+            src="{% static 'core/assets/img/features-2.svg'%}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-1">
+          <h3>How Can Text Analytics Help Companies?</h3>
+          <p class="font-italic">
+            Colossal amounts of unstructured data are generated every minute – internet users post 456,000 new tweets, 510,000 new comments on Facebook, and send 156 million emails – so managing and analyzing information to find what’s relevant becomes a major challenge.
+          </p>
+          <p>
+            Thanks to text analytics, businesses are able to automatically extract meaning from all sorts of unstructured data, from social media posts and emails to live chats and surveys, and turn it into quantitative insights. By identifying trends and patterns with text analytics, businesses can improve customer satisfaction (by learning what their customers like and dislike about their products), detect product issues, conduct market research, and monitor brand reputation, among other things.
+          </p>
+          <p>Text analytics has many advantages – it’s scalable, meaning you can analyze large volumes of data in a very short time, and allows you to obtain results in real-time. So, apart from gaining insights that help you make confident decisions, you can also resolve issues in a timely manner. </p>
+        </div>
+      </div>
+  
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5">
+          <img
+            src="{% static 'core/assets/img/features-3.svg'%}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 pt-5">
+          <h3>
+            Text Analytics Example
+          </h3>
+          <p>
+            One of the most interesting applications of text analytics in business is customer feedback analysis. This includes analyzing product and service reviews to see how your customers evaluate your company, processing the results of open-ended responses to customer surveys, or checking out what customers say about your brand on social media.
+          </p>
+        <p>We invite you to take a Data Analytics test. <a href="">Click Here</a></p>
+        </div>
+      </div>
+  
+      <!-- <div class="row" data-aos="fade-up">
+        <div class="col-md-5 order-1 order-md-2">
+          <img
+            src="{%static 'core/assets/img/features-4.svg'%}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-1">
+          <h3>
+            Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt
+            in
+          </h3>
+          <p class="font-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+{% endblock %}

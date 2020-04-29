@@ -9,3 +9,9 @@ def slicing(request):
 
 def results(request):
     return render(request,'core/results.html')
+
+def base(request):
+    return render(request,'core/base.html')
+
+def info(request):
+    return render(request,'core/info.html')
