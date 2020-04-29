@@ -15,3 +15,9 @@ def base(request):
 
 def info(request):
     return render(request,'core/info.html')
+
+def team(request):
+    return render(request,'core/team.html')
+
+def textAnalyticsDetails(request):
+    return render(request,'core/textAnalyticsDetails.html')

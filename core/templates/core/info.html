@@ -1,6 +1,7 @@
 {% extends 'core/base.html' %} 
 {% load static %}
 {% block title %}Info{%endblock%} 
+{%block active_info%}active{%endblock%}
 {% block Hero %}
 
 <section id="hero" class="d-flex justify-cntent-center align-items-center">
@@ -92,7 +93,7 @@
           <p>
             One of the most interesting applications of text analytics in business is customer feedback analysis. This includes analyzing product and service reviews to see how your customers evaluate your company, processing the results of open-ended responses to customer surveys, or checking out what customers say about your brand on social media.
           </p>
-        <p>We invite you to take a Data Analytics test. <a href="">Click Here</a></p>
+        <p>We invite you to take a Data Analytics test. <a href="{% url 'textAnalyticsDetails' %}">Click Here</a></p>
         </div>
       </div>
   

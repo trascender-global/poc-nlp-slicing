@@ -24,5 +24,7 @@ urlpatterns = [
     path('info/', core_views.info,name='info'),
     path('slicing/', core_views.slicing,name='slicing'),
     path('results/', core_views.results,name='results'),
+    path('team/', core_views.team,name='team'),
+    path('text-analytics-details/', core_views.textAnalyticsDetails,name='textAnalyticsDetails'),
     path('admin/', admin.site.urls),
 ]

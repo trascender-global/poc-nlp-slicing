@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block title %}Home{% endblock %}
-
+{%block active_home%}active{% endblock %}
 {% block Hero %}
 <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
@@ -12,7 +12,9 @@
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Welcome to <span>Text Analytics</span></h2>
-          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <p class="animated fadeInUp">Text analytics is the automated process of translating large volumes
+            of unstructured text into quantitative data to uncover insights,
+            trends, and patterns...</p>
           <a href="{% url 'info' %}" class="btn-get-started animated fadeInUp">Read More</a>
         </div>
       </div>
@@ -39,7 +41,7 @@
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Summary in Only Three Words!</h2>
           <p class="animated fadeInUp">You can try our data analysis tool for text sources, finding a lot of information about a small text, even being able to assign a title with only two or three words!</p>
-          <a href="" class="btn-get-started animated fadeInUp">Try</a>
+          <a href="{% url 'textAnalyticsDetails' %}" class="btn-get-started animated fadeInUp">Try</a>
         </div>
       </div>
 

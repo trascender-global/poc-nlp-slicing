@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+{% block title %}TextAnalytics{%endblock %}
+{%block active_service%}active{%endblock%} 
+{% block body%}
+
+<section class="features">
+  <div class="container">
+    <div class="section-title">
+      <h2>DEMO</h2>
+      <p>
+        Here you will find an app that can summarize a text with its own phrase,
+        you can also obtain a brigram (2 words) or trigram (3 words) that
+        synthesize the central idea of the text very precisely
+      </p>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+      <div class="col-md-5">
+        <img
+          src="{% static 'core/assets/img/nlpbinary.jpg' %}"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div class="col-md-7 pt-4">
+        <div class="text-center">
+          <h3>How do It works?</h3>
+        </div>
+        <p class="text-justify">
+          In this demonstration, we apply natural language processing, generally
+          abbreviated as NLP. This is a branch of artificial intelligence that
+          deals with the interaction between computers and humans using natural
+          language. The ultimate goal of NLP is to read, decipher, understand,
+          and make sense of human languages in a way that is valuable.
+        </p>
+        <p class="text-justify">
+          Please enter a text to be analyzed in the text box below.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2 align-self-center">
+        <div class="text-center">
+          <textarea
+            name=""
+            id=""
+            cols="50"
+            rows="10"
+            class="img-fluid"
+          ></textarea>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+        <div class="text-center">
+        <h3>Sample Text</h3>
+      </div >
+        <p class="text-justify">
+          Harry Potter and the Chamber of Secrets. In the second book, Harry Potter and the Chamber of Secrets, Rowling pits Harry against Tom Riddle, Lord Voldemort's "memory" within a secret diary which has possessed Ron's younger sister Ginny. When Muggle-born students are suddenly being Petrified, many suspect that Harry may be behind the attacks, further alienating him from his peers. Furthermore, Harry begins to doubt his worthiness for House of Gryffindor, particularly considering he discovers he shares Lord Voldemort's ability to communicate with snakes via Parseltongue. In the climax, Ginny disappears. To rescue her, Harry battles Riddle and the monster he controls that is hidden in the Chamber of Secrets. To defeat the monster, Harry summons the Sword of Godric Gryffindor from the Sorting Hat supplied by Dumbledore's pet phoenix, Fawkes. In doing so, Dumbledore later restores Harry's self-esteem by explaining that that feat is clear proof of his worthiness of his present house. Harry Potter and the Prisoner of Azkaban. In the third book, Harry Potter and the Prisoner of Azkaban, Rowling uses a time travel premise. Harry learns that his parents were betrayed to Voldemort by their friend Peter Pettigrew, who framed Harry's godfather Sirius Black for the crimes, condemning him to Azkaban, the wizard prison. When Sirius escapes to find Harry, Harry and Hermione use a Time Turner to save him and a hippogriff named Buckbeak. When Pettigrew escapes, an innocent Sirius becomes a hunted fugitive once again. Harry learns how to create a Patronus, which takes the form of a stag, the same as his late father's. Harry Potter and the Goblet of Fire. In the previous books, Harry is written as a child, but Rowling states that in the fourth novel, Harry Potter and the Goblet of Fire, "Harry's horizons are literally and metaphorically widening as he grows older."[10] Harry's developing maturity becomes apparent when he becomes romantically interested in Cho Chang, a student in Ravenclaw house. Tension mounts, however, when Harry is mysteriously chosen by the Goblet of Fire to compete in the dangerous Triwizard Tournament, even though another Hogwarts champion, Cedric Diggory, has already been selected. Voldemort uses the Tournament for an elaborate scheme to lure Harry into a deadly trap.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
