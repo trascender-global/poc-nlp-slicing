@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.urls import reverse
 from .forms import ParagraphForm
 
 # Create your views here.
@@ -25,6 +26,6 @@ def textAnalyticsDetails(request):
         paragraph_form = ParagraphForm(data=request.POST)
         if paragraph_form.is_valid():
             text=request.POST.get('text','')
-        return render(request,'core/results.html',{'text':text})
+        return redirect(reverse('results')+'?'+text)
     else:
         return render(request,'core/textAnalyticsDetails.html')

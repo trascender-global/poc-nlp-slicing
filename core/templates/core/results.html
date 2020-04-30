@@ -4,6 +4,8 @@
 {% block body %}
 <h1>Results</h1>
 <h3>Here is the results part</h3>
-{{text}}
+{% for element in request.GET%}
+<p>{{element}}</p>
+{% endfor %}
 {% endblock %}
 
