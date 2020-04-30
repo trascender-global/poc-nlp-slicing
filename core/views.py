@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import ParagraphForm
 
 # Create your views here.
 def home(request):
@@ -20,4 +21,10 @@ def team(request):
     return render(request,'core/team.html')
 
 def textAnalyticsDetails(request):
-    return render(request,'core/textAnalyticsDetails.html')
+    if request.method=="POST":
+        paragraph_form = ParagraphForm(data=request.POST)
+        if paragraph_form.is_valid():
+            text=request.POST.get('text','')
+        return render(request,'core/results.html',{'text':text})
+    else:
+        return render(request,'core/textAnalyticsDetails.html')
