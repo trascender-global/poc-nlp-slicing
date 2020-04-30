@@ -1,11 +1,69 @@
 {% extends 'core/base.html' %}
 {% load static %}
 {% block title %}Resutls{%endblock %} 
+
 {% block body %}
-<h1>Results</h1>
-<h3>Here is the results part</h3>
-{% for element in request.GET%}
-<p>{{element}}</p>
-{% endfor %}
+
+<section class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Results</h2>
+        <p>
+            Here you will find your results.
+        </p>
+      </div> 
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5 order-1 order-md-2">
+          <img
+            src="{%static 'core/assets/img/features-4.svg'%}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-1">
+          <h2>
+            Title: <strong>{{title3}}</strong>
+          </h2>
+          <h4>
+              Secondaty Title: <strong>{{title2}}</strong>
+          </h4>
+          <p class="font-italic">
+            Aditional options:
+            {% for  element in cb%}
+                {{element}}, 
+            {%endfor%}
+            {% for  element in ct%}
+                {{element}}, 
+            {%endfor%}
+          </p>
+          <p>
+            <i>Summary: </i>{{summary}}
+          </p>
+          
+          
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5 order-1 order-md-1">
+          <img
+            src="{% static 'core/assets/img/sentiment-analysis.png'%}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-2">
+            <h3>What is the sentiment analysis of the text?</h3>
+            <p>The feeling implicit in the text is <strong>{{s}}</strong></p>
+        </div>
+      </div>
+
+      <div class="text-center">
+          <h1>Try another example!</h1>
+          <a class="btn btn-primary" href="{% url 'textAnalyticsDetails' %}" role="button">Try</a>
+      </div>
+    </div>
+
+
+  </section>
 {% endblock %}
 
