@@ -1,0 +1,65 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Resutls{%endblock %} 
+
+{% block body %}
+
+{{number}}
+{% for element in text%}
+<p>{{element}}</p>
+<p>=============================================</p>
+{% endfor %}
+
+{% for element in s %}
+<h2>{{element}}</h2>
+{% endfor %}
+
+<section class="features">
+  <div class="container">
+    <div class="section-title">
+      <h2>Results</h2>
+      <p>
+          Here you will find your results.
+      </p>
+    </div> 
+    {% for text, summary_list,title2_list,title3_list,cb_list,ct_list,s_list in output %}
+    <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+        <p class="p-3 mb-2 bg-dark text-white">{{text}}</p>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+        <h2>
+          Title: <strong>{{title3_list}}</strong>
+        </h2>
+        <h4>
+            Secondaty Title: <strong>{{title2_list}}</strong>
+        </h4>
+        <p class="font-italic">
+          Aditional options:
+          {% for  element in cb_list%}
+              {{element}}, 
+          {%endfor%}
+          {% for  element in ct_list%}
+              {{element}}, 
+          {%endfor%}
+        </p>
+        <p>
+          <i>Summary: </i>{{summary_list}}
+        </p>
+        <h4>Sentiment: {{s_list}}</h4>
+        
+        
+      </div>
+    </div>
+    {% endfor %}
+
+    <div class="text-center">
+        <h1>Try another example!</h1>
+        <a class="btn btn-primary" href="{% url 'textAnalyticsDetails' %}" role="button">Try</a>
+    </div>
+  </div>
+
+
+</section>
+
+{% endblock %}
