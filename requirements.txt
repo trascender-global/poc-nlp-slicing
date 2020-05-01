@@ -1,0 +1,6 @@
+django==2.0.2
+NLTK
+numpy
+textblob
+networkx
+scikit-learn
