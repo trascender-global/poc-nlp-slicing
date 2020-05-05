@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=j$t!n1^l6knput*l+&i+b())nsn4rc1#t5o9g-gjx4wl^@i@k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['textanalyticstg-env.eba-24ncruak.us-east-2.elasticbeanstalk.com','ec2-3-21-133-28.us-east-2.compute.amazonaws.com','3.21.133.28']
 
 
 # Application definition
