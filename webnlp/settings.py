@@ -25,7 +25,7 @@ SECRET_KEY = '=j$t!n1^l6knput*l+&i+b())nsn4rc1#t5o9g-gjx4wl^@i@k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-52-55-14-246.compute-1.amazonaws.com','nlpslicingapp.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['ec2-52-55-14-246.compute-1.amazonaws.com','nlpslicingapp.us-east-1.elasticbeanstalk.com','127.0.0.1']
 
 
 # Application definition
@@ -120,3 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
