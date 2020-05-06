@@ -25,7 +25,7 @@ SECRET_KEY = '=j$t!n1^l6knput*l+&i+b())nsn4rc1#t5o9g-gjx4wl^@i@k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-52-55-14-246.compute-1.amazonaws.com']
+ALLOWED_HOSTS = ['ec2-52-55-14-246.compute-1.amazonaws.com','nlpslicingapp.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
