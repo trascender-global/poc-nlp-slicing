@@ -1,3 +1,3 @@
 <h1>NLP Slicing Platform</h1>
 
-<img src="https://www.dropbox.com/s/9u3bdema7r1uw8s/carousel.JPG?dl=0"/>
+<img src="https://uc595905366bb6e0197f30b89af1.previews.dropboxusercontent.com/p/thumb/AAzveJqK2oL-pNcYrhgxtrOmdM2F3zs9Npm896zedaet4xTOAM9IX4wCLMjKjITdjG9FrVB3Avirtz_Hqd_NLm1es3nhy3WmnTle90iMSD1Tym8MtT2xcxVaiyfVZLfYuh8FZbFykGqqMKseRi3ah5p0vfXTZGXLLZmxJT6uy9Auc7pDbSYc4o1g819aiWD5LP9hBP3PilenBc1A5LvDZ5W4kbxeoGtnltIdoivO8RGafdYx92HzBR5l3iXAQTbrQd2f61f_Bhg7Bh-x4iU_G0uDebFHZgU2FhExsrq_o-SLso0I5Upu8QJtDmD1JMoHxWn6DFwPyh6LbUBFnermeWw1UGX7sPb09KM-zxn3ByQQUwDOpHYISraOkOXvOTty8NmkyEYuXTfwhNS8NZjTQ6ei/p.jpeg?size=1280x960&size_mode=3"/>
