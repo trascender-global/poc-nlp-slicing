@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %} {% load static %} {% block title%}Auto
+Slice{%endblock %} {%block active_service%}active{%endblock%} {% block body%}
+
+<section class="features">
+  <div class="container">
+    <div class="section-title">
+      <h2>AUTO SLICING</h2>
+      <p>
+        Artificial intelligence does everything for you. Just paste a text and
+        see how it works. Try it!
+      </p>
+    </div>
+    <form action="" method="POST">
+      {% csrf_token %}
+    <tr>
+      <td><textarea name="text" id="id_text" required cols="120" rows="10"></textarea></td>
+      </tr>
+    <p></p>
+    <input type="submit" class="btn btn-primary" value="Send"></input>
+  </form>
+  </div>
+</section>
+
+{% endblock %}

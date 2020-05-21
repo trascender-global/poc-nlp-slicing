@@ -108,7 +108,10 @@ def trascender_summary(text):
 
     # Linguistic Wealth
     def lin_wealth(texto):
-        return len(set(texto))/len(texto)
+        if len(texto)!=0:
+            return len(set(texto))/len(texto)
+        else:
+            return 0
 
     summary=generate_summary(text, 1)
 
@@ -153,6 +156,11 @@ def trascender_summary(text):
     return summary,(lin_wealth(text),lin_wealth(summary)),collocation_bigram,collocation_trigram,sentiment
 
 def union_bigram(cb):
+    if len(cb)==0:
+        cb= [['Title','not'],['Title','not']]
+    elif len(cb)==1:
+        cb.append(['Title','not'])
+
     cb_1=[]
     cont=0
     for element in cb[1:]:
@@ -165,8 +173,13 @@ def union_bigram(cb):
     return title.upper(), cb_1
 
 def union_trigram(ct):
+    if len(ct)==0:
+        ct= [['Title','not','found'],['Title','not','found']]
+    elif len(ct)==1:
+        ct.append(['Title','not','found'])
     ct_1=[]
     cont=0
+
     for element in ct[1:]:
         ct_1.append(element[0]+' '+element[1]+ ' '+element[2])
         cont+=1
@@ -175,6 +188,7 @@ def union_trigram(ct):
     title = ct[0]
     title = title[0]+ ' '+title[1]+' '+title[2]  
     return title.upper(), ct_1
+
 def sentiment(s):
     if s<-0.2:
         return "NEGATIVE"

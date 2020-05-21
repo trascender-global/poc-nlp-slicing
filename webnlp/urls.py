@@ -27,5 +27,7 @@ urlpatterns = [
     path('resultsSlicing/', core_views.resultsSlicing,name='resultsSlicing'),
     path('team/', core_views.team,name='team'),
     path('text-analytics-details/', core_views.textAnalyticsDetails,name='textAnalyticsDetails'),
+    path('automaticSlice/',core_views.AutomaticSlice,name='automaticSlice'),
+    path('resultsAuto/',core_views.resultsAuto,name='resultsAuto'),
     path('admin/', admin.site.urls),
 ]

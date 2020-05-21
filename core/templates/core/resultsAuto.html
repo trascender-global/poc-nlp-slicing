@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title%}Resutls{%endblock %}
+{% block body %}
+<section class="features">
+  <div class="container">
+    <div class="section-title">
+      <h2>Results</h2>
+      <h3>
+        The results are ready!!
+      </h3>
+      {% for paragraph,title2,title3,url in output %}
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5 order-1 order-md-2">
+          <img
+            src="{{url}}"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-1">
+          <h2>
+            <strong>{{title3}}</strong>
+          </h2>
+          Secondaty Title: <strong>{{title2}}</strong>
+          <p class= "text-justify">{{paragraph}}</p>
+        </div>
+      </div>
+      {% endfor %}
+
+      
+    </div>
+  </div>
+</section>
+{% endblock %}
